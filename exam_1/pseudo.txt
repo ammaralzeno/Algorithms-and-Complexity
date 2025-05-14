@@ -1,0 +1,30 @@
+DEFINE CLASS Person:
+    gender: STRING
+    children: LIST OF Person
+
+DEFINE CLASS Family:
+    progenitor: Person
+
+FUNCTION are_structurally_equal(families: LIST OF Family) -> BOOLEAN:
+    IF families is empty:
+        RETURN TRUE
+    
+    first_family_structure = get_structure(families[0].progenitor)
+    
+    FOR EACH family IN families[1:]:
+        IF get_structure(family.progenitor) != first_structure:
+            RETURN FALSE
+    
+    RETURN TRUE
+
+FUNCTION get_structure(person: Person) -> STRING:
+    structure = person.gender
+    
+    IF person has no children:
+        RETURN structure
+    
+    children_structures = EMPTY LIST
+    FOR EACH child IN person.children:
+        ADD get_structure(child) TO children_structures
+    
+    RETURN structure + "(" + JOIN children_structures WITH "," + ")"
