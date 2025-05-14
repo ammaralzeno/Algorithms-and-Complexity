@@ -1,6 +1,6 @@
 # Algorithms, Data Structures and Complexity
 
-This course provides an introduction to theoretical computer science, which is a strong research area at KTH. There will be mostly algorithm design and you will see some pretty complicated, but very useful, algorithms. The complexity part of the course is about how to investigate which problems can be solved (in reasonable time) with the help of computers, which problems take an unreasonably long time and which cannot be solved with a computer at all. Problems that are too difficult to solve accurately can sometimes be solved approximately.
+My introduction to theoretical computer science. There will be mostly algorithm design and you will see some pretty complicated, but very useful, algorithms. The complexity part of the course is about how to investigate which problems can be solved (in reasonable time) with the help of computers, which problems take an unreasonably long time and which cannot be solved with a computer at all. Problems that are too difficult to solve accurately can sometimes be solved approximately.
 
 ## Design principles of algorithms:
 
