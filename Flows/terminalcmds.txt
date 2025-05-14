@@ -1,0 +1,4 @@
+scp -r alzeno@student-shell.sys.kth.se:/afs/kth.se/misc/info/kurser/DD2350/adk24/labb5/verifyLab5 ~/Desktop
+ssh student-shell
+kinit -f alzeno@KTH.SE
+scp ~/Desktop alzeno@student-shell.sys.kth.se:/
